@@ -1,0 +1,369 @@
+
+:root {
+  --primary-color: #00292b;
+  --primary-color-dark: #001111;
+  --secondary-color: #c58255;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    padding: 25px 20px;
+    }
+    
+body {
+  background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(bgimg.jpg);
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.link a {
+  padding: 1rem;
+  padding-top: 2rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.link a:hover {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+.right__content {
+  text-align: left;
+  max-width: 600px;
+  margin-left: 8rem;
+  margin-top: 8rem;
+  padding: 2rem;
+}
+
+.right__content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: var(--secondary-color);
+}
+
+.right__content h4 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.right__content p {
+  margin-bottom: 3rem;
+  color: var(--white);
+}
+
+.btn {
+  margin-bottom: 3rem;
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+.primary__btn {
+  margin-right: 1rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.secondary__btn {
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+@media (width < 780px) {
+  nav {
+    justify-content: center;
+  }
+
+  .nav__links {
+    gap: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container__left {
+    min-height: 700px;
+  }
+
+  .left__content {
+    max-width: none;
+    margin: 6rem 0;
+    text-align: center;
+  }
+
+  .container__right {
+    min-height: 700px;
+  }
+
+  .container__right img {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+  }
+
+  .right__content {
+    text-align: center;
+    margin: 8rem auto;
+  }
+
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  img {
+    width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .explore__container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    background: url(exp.jpeg);
+    background-size : cover;
+  
+  }
+  
+  .sectionn__header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .explore__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .explore__card {
+    width: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    border-radius: 10px;
+  }
+  
+  .explore__card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .explore__card img {
+    width: 100%;
+    min-height: 80%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  
+  .explore__card h4 {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  
+
+
+
+  .banner__container {
+    background-image: linear-gradient(
+        rgba(35, 71, 103, 0.5),
+        rgba(35, 71, 103, 0.5)
+      ),
+      url("dis.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .banner__container .section__container {
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  
+  .banner__content h2 {
+    font-size: 2rem;
+    font-weight: 5000px;
+    color: whitesmoke;
+    font-weight: bolder;
+    
+  }
+  
+  .banner__content button {
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+
+    
+  }
+  
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-content span {
+    color: #ffd700; 
+}
+
+.footer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.newsletter {
+    margin-top: 30px;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #ffcc00;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd700; 
+}
+.copyright {
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: #ccc;
+}
