@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();
+}
+
+nav {
+    background-color: #1d0c6b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.left{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+#intro{
+    justify-content: space-around;
+    display: flex;
+    
+}
+#intro div{
+margin-top: 50px;
+    width: 50%;
+}
+.leftsection{
+padding-top: 100px;
+    font-size: 2.3rem;
+    margin: 50px 0;
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: blueviolet;
+}
+
+
+h1,h2
+{
+    font-size: 2rem;
+    text-align: center;
+    color: #1d0c6b; ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0%;
+}
+
+.profile-img {
+    display: block;
+    margin: 50px 0;
+    width: 80%;
+    padding-left: 100px;
+    border-radius: 50%;
+}
+
+.section__subtitle {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+/* About Section */
+.about-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: white;
+    box-shadow: 1px 8px 10px 2px ;
+    border-radius: 20px;
+}
+.about-info p{
+    text-align: center;
+    font-size: 15px;
+    color: #351919;
+}
+.about-btn button{
+    position: center;
+    right: 20px;
+    bottom: 20px;
+    background: blue;
+    color: white;
+    border-radius: 30px;
+    height: 3rem;
+    width:7rem;
+}
+.about-btn button:hover{
+    background: white;
+    color: black;
+}
+
+/* Education Section */
+.conatiner_education  {
+    gap: 20px;
+   display: flex!important;
+  }
+
+.qualification__data_left{
+    padding-left: 30px ;    
+    width: 35%;
+    background: white;
+    box-shadow: 1px 8px 10px 2px ;
+    border-radius: 20px;
+}
+.qualification__data_middle{
+    padding-left: 55px ;
+    width: 35%;
+    background: white;
+    box-shadow: 1px 8px 10px 2px ;
+    border-radius: 20px;
+}
+.qualification__data_right{
+    padding-left: 70px ;
+    width: 35%;
+    background: white;
+    box-shadow: 1px 8px 10px 2px ;
+    border-radius: 20px;
+} 
+
+/* Skills Section */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skills__content {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .skills__title {
+    margin: 0 0 10px;
+  }
+  
+  .skills__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills__data {
+    margin-bottom: 10px;
+  }
+  
+  .skills__name {
+    margin: 0;
+  }
+  
+  .skills__bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .skills__percentage {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+    width: var(--percentage);
+    transition: width 0.5s;
+  }
+  
+  
+
+/* Projects Section */
+.projects__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project {
+    width: calc(33.33% - 20px);
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project__info {
+    margin-top: 20px;
+  }
+  
+  .project__info h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .project__info p {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  
+/* Contact Section */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #04c474;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #00b3a4;
+}
